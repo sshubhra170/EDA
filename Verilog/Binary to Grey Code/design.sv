@@ -1,0 +1,13 @@
+// Code your design here
+module bin2gray
+        (input [3:0] bin, //binary input
+         output [3:0] G //gray code output
+        );
+
+//xor gates.
+assign G[3] = bin[3];
+assign G[2] = bin[3] ^ bin[2];
+assign G[1] = bin[2] ^ bin[1];
+assign G[0] = bin[1] ^ bin[0];
+
+endmodule
